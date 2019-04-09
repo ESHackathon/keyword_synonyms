@@ -4,7 +4,6 @@ import json
 
 url = "http://18.212.76.171/episte/keywords/similars"
 
-
 def get_synonyms(infile, n):
     with open(infile, 'r') as jsonfile:
         data = json.load(jsonfile)
@@ -14,7 +13,6 @@ def get_synonyms(infile, n):
         output[k] = r.json()
     with open('output.json', 'w+') as outfile:
         outfile.write(json.dumps(output))
-    print(output)
 
 
 if __name__ == "__main__":
