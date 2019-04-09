@@ -11,8 +11,9 @@ def get_synonyms(infile, n):
     for k in data['keywords']:
         r = requests.get(url, params={'positive': k, 'size': n})
         output[k] = r.json()
-    with open('output.json', 'w+') as outfile:
-        outfile.write(json.dumps(output))
+    print(json.dumps(output))
+    # with open('output.json', 'w+') as outfile:
+    #     outfile.write(json.dumps(output))
 
 
 if __name__ == "__main__":
