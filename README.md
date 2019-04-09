@@ -8,4 +8,4 @@ This library uses the [keyword2svec API](http://18.212.76.171/episte/) ([code he
 
 `python keywords.py input.json 5`
 
-This will produce a file named `output.json` containing the synonyms returned for each keyword
+This will produce a file named `output.json` containing 5 synonyms for each keyword
