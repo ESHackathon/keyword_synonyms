@@ -2,7 +2,7 @@ import sys
 import requests
 import json
 
-url = "http://18.212.76.171/episte/keywords/similars"
+url = "http://k.episte.co/keywords/similars"
 
 def get_synonyms(infile, n):
     with open(infile, 'r') as jsonfile:
