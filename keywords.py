@@ -13,7 +13,7 @@ def get_synonyms(infile, outfile, n):
         r = requests.get(url, params={'positive': k, 'size': n})
         output[k] = r.json()
     with open(outfile, 'w+') as out:
-        out.write(json.dumps(output))
+        json.dump(output,out)
 
 
 if __name__ == "__main__":
